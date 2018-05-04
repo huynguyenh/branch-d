@@ -36,7 +36,7 @@ fn delete_branch(name: &String) {
 fn get_list_of_branches() -> Vec<String> {
     let output = Command::new("git")
         .arg("branch")
-        .arg("merged")
+        .arg("--merged")
         .arg("develop")
         .output()
         .unwrap_or_else(|e| panic!("failed to execute process: {}", e));
