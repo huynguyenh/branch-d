@@ -2,6 +2,8 @@
 name = "branch"
 version = "0.1.0"
 authors = ["huynguyenh <hoanghuy2908@gmail.com>"]
+description = "tiny little cli to delete merge branch in git"
+license="MIT"
 
 [dependencies]
 clap = "2.31.2"
