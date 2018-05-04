@@ -1,6 +1,6 @@
 [package]
-name = "branch"
-version = "0.1.0"
+name = "branch-d"
+version = "0.1.1"
 authors = ["huynguyenh <hoanghuy2908@gmail.com>"]
 description = "tiny little cli to delete merge branch in git"
 license="MIT"
