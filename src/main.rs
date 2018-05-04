@@ -26,7 +26,7 @@ fn get_git_hub_repo() -> String {
         .output()
         .unwrap_or_else(|e| panic!("failed to execute process: {}", e));
 
-    let output: String = String::from(String::from_utf8_lossy(&output.stdout));
+    let output: String = String::from(Strin g::from_utf8_lossy(&output.stdout));
     if output.contains("github.com") {
         let mut v: Vec<&str> = output.split("/").collect();
         v = v[v.len() - 1].split(".").collect();
